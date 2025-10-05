@@ -34,7 +34,7 @@ public class MergeSort {
         int mid = (low + high) / 2;
         mergeSort(arr,low,mid);
         mergeSort(arr,mid+1,high);
-        merge(arr, low, mid, high);  // merging sorted halves
+        merge(arr, low, mid, high);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
