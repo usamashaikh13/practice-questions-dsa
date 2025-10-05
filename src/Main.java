@@ -3,17 +3,18 @@ import java.util.*;
 
 public class Main {
 
-    public static String reverse(String s){
+    public static String reverse(String s) {
         Stack<Character> stack = new Stack<>();
-        for(char c : s.toCharArray()){
+        for (char c : s.toCharArray()) {
             stack.push(c);
         }
         StringBuilder res = new StringBuilder();
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             res.append(stack.pop());
         }
         return res.toString();
     }
+
     public static void main(String[] args) {
         String s = "OsamaShaikh";
         System.out.println(s);
